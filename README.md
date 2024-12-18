@@ -1,3 +1,4 @@
-# Express on Vercel - Demo
+# O'clock Open APIs
 
-Le secret se trouve dans [le fichier de configuration](https://github.com/enzoclock/express-vercel-demo/blob/main/vercel.json) 
+[See live API](https://oclock-api.vercel.app/)
+

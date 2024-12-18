@@ -7,7 +7,6 @@ const app = express();
 // CORS middleware
 app.use(corsMiddleware);
 
-
 // Public folder
 app.use(express.static("public"));
 
