@@ -1,13 +1,8 @@
-import { resolve } from "node:path";
 import express from "express";
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.sendFile(resolve(import.meta.dirname, "index.html"));
-});
-
-app.get("/currencies", (_, res) => {
+app.get("/api/currencies", (_, res) => {
   res.send("<h1>WIP</h1>");
 });
 
