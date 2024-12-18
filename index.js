@@ -1,4 +1,5 @@
 import express from "express";
+import { router } from "./api.js";
 
 const app = express();
 
@@ -6,8 +7,11 @@ const app = express();
 app.use(express.static("public"));
 
 // API
-app.get("/api/currencies", (_, res) => {
-  res.send("<h1>WIP</h1>");
+app.use("/api", router);
+
+// Not found
+app.use((req, res) => {
+  res.redirect("/");
 });
 
 const port = process.env.PORT || 3000;
