@@ -1,0 +1,15 @@
+{
+  "name": "oapi",
+  "description": "Oclock Open APIs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "author": "contact@oclock.io",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
