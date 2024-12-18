@@ -1,13 +1,15 @@
+import { resolve } from "node:path";
 import express from "express";
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.sendFile("./index.js");
+  path
+  res.sendFile(resolve(import.meta.dirname, "index.html"));
 });
 
-app.get("/welcome", (_, res) => {
-  res.send("<h1>Welcome</h1>");
+app.get("/currencies", (_, res) => {
+  res.send("<h1>WIP</h1>");
 });
 
 const port = process.env.PORT || 3000;
