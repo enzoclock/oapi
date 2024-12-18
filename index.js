@@ -2,6 +2,10 @@ import express from "express";
 
 const app = express();
 
+// Public folder
+app.use(express.static("public"));
+
+// API
 app.get("/api/currencies", (_, res) => {
   res.send("<h1>WIP</h1>");
 });
