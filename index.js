@@ -3,10 +3,7 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send(`
-    <h1>Oclock Open APIs</h1>
-    <p>Please visit <a href="/welcome">this page</a>
-  `);
+  res.sendFile("./index.js");
 });
 
 app.get("/welcome", (_, res) => {
