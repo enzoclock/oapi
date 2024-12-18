@@ -4,7 +4,6 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-  path
   res.sendFile(resolve(import.meta.dirname, "index.html"));
 });
 
