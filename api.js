@@ -5,6 +5,7 @@ import currenciesInfo from "./data/currencies/details.js";
 import weatherCity from "./data/weather/cities.js";
 import blogPosts from "./data/blog/posts.js";
 import blogCategories from "./data/blog/categories.js";
+import macarons from "./data/macarons/macarons.js";
 
 export const router = Router();
 
@@ -20,6 +21,8 @@ router.get("/blog/posts", (_, res) => { res.json(blogPosts); });
 // GET /api/blog/categories
 router.get("/blog/categories", (_, res) => { res.json(blogCategories); });
 
+// GET /api/macarons
+router.get("/macarons", (_, res) => { res.json(macarons); });
 
 // GET /api/weather/cities(?random=true)
 router.get("/weather/cities", (req, res) => {
